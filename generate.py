@@ -78,8 +78,8 @@ def main():
 
 def complete_captcha_name(captcha_length, random_captcha, version, path_exist):
     remain_length = 6 - captcha_length
-    remain_str = ''.join(" " for i in range(remain_length))
-    if path_exist == 0:
+    remain_str = ''.join("¥" for i in range(remain_length))
+    if path_exist:
         str_tmp = random_captcha + remain_str
         str_encoded = base64.urlsafe_b64encode(str_tmp.encode()).decode()
         return str_encoded + '.png'

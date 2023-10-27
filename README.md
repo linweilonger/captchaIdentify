@@ -21,9 +21,16 @@ nohup python train.py --width 128 --height 64 --length 6 --symbols symbols_train
 
 ```
 
-## Classify captchas
+## Classify captchas example and transfer tflite model
 
 ```bash
 python classify.py --model-name welin --captcha-dir images/ --output welin.csv --symbols symbols_train_classfy.txt
+
+```
+
+## Classify on Pi
+
+```bash
+python classify_pi.py --model-name classify_model_pi --captcha-dir images-captcha/ --output welin_re_pi.csv --symbols symbols-pi.txt
 
 ```
