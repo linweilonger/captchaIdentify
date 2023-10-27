@@ -1,5 +1,9 @@
 #captchaIdentify
 
+## Group-31 Member: 
+Weilong Lin (23359816) 
+Rasika Burde (23331395)
+
 ## Generate training data
 
 ```bash
